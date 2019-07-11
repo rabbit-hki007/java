@@ -1,0 +1,26 @@
+package chapter2;
+
+import java.util.Scanner;
+
+public class Ex01_RecArea {
+
+	public static void main(String[] args) {
+		int extent = 0;
+		int aLength;
+		int bLength;
+		
+		Scanner garo = new Scanner(System.in);
+		System.out.println("가로 길이를 입력하세요 : ");
+		aLength = garo.nextInt();
+		
+		Scanner sero = new Scanner(System.in);
+		System.out.println("세로 길이를 입력하세요 : ");
+		bLength = sero.nextInt();
+		
+		extent = aLength * aLength;
+		
+		System.out.println(extent);
+
+	}
+
+}

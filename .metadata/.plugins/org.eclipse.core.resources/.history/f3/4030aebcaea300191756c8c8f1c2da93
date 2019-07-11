@@ -1,0 +1,17 @@
+package chapter2;
+
+import java.util.Scanner;
+
+public class Ex01_ComputeAge {
+
+	public static void main(String[] args) {
+		Scanner name = new Scanner(System.in);
+		System.out.println("이름을 입력해 주세요 : ");
+		Scanner birth = new Scanner(System.in);
+		System.out.println("생년을 입력해 주세요 : ");
+		
+		
+
+	}
+
+}

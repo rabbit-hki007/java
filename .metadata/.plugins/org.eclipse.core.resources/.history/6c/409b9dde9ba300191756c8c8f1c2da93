@@ -1,0 +1,23 @@
+/*
+데이터 타입
+기본 자료형, 참조 자료형
+기본자료형은 정수형, 문자형, 실수형, 논리형
+정수형 : byte, short, int, long
+실수형 : float, double
+논리형 : boolean
+*/
+
+package chapter2;
+
+public class A02_Character {
+	
+	public static void main(String[] args) {
+	// TODO Auto-generated method stub
+		// byte의 유효숫자 범위 -2^7 ~ 2^7-1 이 표현 가능
+		byte b_num1 = 127; //byte b_num1 = 128;은 안들어감
+		System.out.println(b_num1);
+		
+		short s_num2 = -32767;
+		System.out.println(s_num2);
+	}
+}

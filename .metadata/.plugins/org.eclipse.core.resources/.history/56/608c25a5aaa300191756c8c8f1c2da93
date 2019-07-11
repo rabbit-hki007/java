@@ -1,0 +1,25 @@
+
+/*
+ * 상수 : 프로그램에서 변하지 않는 수
+ * 자바에서는 final이라는 키워드를 사용해서 선언한다
+*/
+package chapter2;
+
+public class A05_Constant {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		final int MAX_NUM = 1000;
+		final double PI = 3.141592;
+		
+		System.out.println(MAX_NUM); //1000
+		System.out.println(PI); //3.141592
+		
+		// MAX_NUM = 2000;
+		// 값을 변경할 수 없다 상수니깐
+		
+		System.out.println(1+MAX_NUM); //1001
+		
+	}
+
+}
