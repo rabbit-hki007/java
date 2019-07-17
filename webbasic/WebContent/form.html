@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>입력폼</title>
+</head>
+<body>
+	<img src="img/menu.jpg" alt="메뉴판" usemap="#favorites">
+	<map name="favorites">
+		<area shape="rect" coords="78,47,200,100" href="index.html" alt="홈">
+		<area shape="rect" coords="255,47,397,100" href="myprofile.html"
+			alt="프로필">
+		<area shape="rect" coords="461,47,600,100" href="myprofile.html"
+			alt="Example">
+		<area shape="rect" coords="652,47,794,100" href="myprofile.html"
+			alt="Form">
+
+		<form>
+			<fieldset>
+				<legend>개인정보</legend>
+				<table border=0>
+					<tr>
+						<td><label for="userid">ID : </label></td>
+						<td><input type="text" id="userid" size=20 placeholder="아이디를 입력해" readonly="readonly"></td>
+					</tr>
+					<tr>
+						<td><label for="userpw">PW : </label></td>
+						<td><input type="text" id="userpw" size=20></td>
+					</tr>
+					<tr>
+						<td colspan=2 align="center"><input type="submit" value="로그인">&nbsp;&nbsp;&nbsp;<input
+							type="reset" value="취소"></td>
+					</tr>
+				</table>
+			</fieldset>
+		</form>
+	</map>
+	<h1>회원가입</h1>
+	<form action="">
+		<fieldset>
+			<legend>로그인 정보</legend>
+			<ul>
+				<li><label for="user_id">아이디 :</label><input type="text" id="user_id"></li>
+				<li><label for="pwd1">비밀번호 :</label><input type="password" id="pwd1"></li>
+				<li><label for="pwd2">비밀번호확인 :</label><input type="password" id="pwd2"></li>
+			</ul>
+		</fieldset>
+		<fieldset>
+			<legend>개인정보</legend>
+			<ul>
+				<li><label for="user_name">이름:</label><input type="text" id="user_name" autofocus></li>
+				<li><label for="mail">메일주소:</label><input type="email" id="mail"></li>
+				<li><label for="phone">연락처:</label><input type="tel" id="phone"></li>
+				<li><label for="url">블로그/홈페이지:</label><input type="url" id="url"></li>
+			</ul>
+		</fieldset>
+		<input type="search" ><input type="submit" value="검색">
+		<input type="submit" value="가입하기"><br>  
+		<label>주문갯수1 :</label>	<input type="number" min=1 max=5 value=1><br>
+		<label>주문갯수2 :</label><input type="range" min=1 max=5 value=1>
+		<fieldset>
+			<legend>신청과목</legend>
+			<label>신청할 과목 선택(1과목)</label><br> 
+				<input type="radio"	name="subject" value="speaking">회화
+				<input type="radio"	name="subject" value="grammar">문법
+				<input type="radio"	name="subject" value="writing">작문
+		</fieldset>
+		<fieldset>
+			<legend>메일링</legend>
+			<label>메일수신할 뉴스 주제(중복가능)</label><br> 
+				<input type="checkbox" name="mailing1" value="news">해외단신 
+				<input type="checkbox" name="mailing2" value="dialog">5분회화 
+				<input type="checkbox" name="mailing3" value="pops">모닝팝스
+		</fieldset>
+		<input type="color"><br>
+		조회기간 : <input type="date" id="start">~<input type="date" id="end"><br>
+		조회시간 : <input type="time" id="start1">~<input type="time" id="end1"><br>
+		<input type="image" src="/img/button.jpg"><br>
+		<select id="class">
+		   <option value="arch">건축공학과</option>
+		   <option value="comp">컴퓨터공학과</option>
+		   <option value="meca" selected>기계공학과</option>
+		</select>
+		<br>
+		<select id="class">
+		   <optgroup label="공과대학">
+		   <option value="arch1">건축공학과</option>
+		   <option value="comp1">컴퓨터공학과</option>
+		   <option value="meca1">기계공학과</option>
+		   </optgroup>
+		   <optgroup label="인문대학">
+		   <option value="arch1">건축공학과</option>
+		   <option value="comp1">컴퓨터공학과</option>
+		   <option value="meca1">기계공학과</option>
+		   </optgroup>
+		</select>
+		<br>
+		<textarea cols=50 rows=10 id="content">내용을 남겨주세요</textarea>
+		<br>
+		<progress value=30 max=100></progress>
+		<br>
+		<meter value=0.8></meter>
+	</form>
+</body>
+</html>
